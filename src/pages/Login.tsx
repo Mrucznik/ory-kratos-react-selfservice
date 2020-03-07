@@ -2,6 +2,7 @@ import React from 'react';
 import IconLogo from "../components/icons/IconLogo";
 import FormFields from "../components/FormFields";
 import FormErrors from "../components/FormErrors";
+import {Link} from "react-router-dom";
 
 const Login = () => {
     return (
@@ -21,7 +22,7 @@ const Login = () => {
 
                     <div className="alternative-actions">
                         {/*<a href="{{baseUrl}}auth/registration">Recover password</a>*/}
-                        <a href="{{baseUrl}}auth/registration">Register new account</a>
+                        <Link to="/auth/registration">Register new account</Link>
                     </div>
             </div>
         </div>

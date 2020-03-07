@@ -3,23 +3,24 @@ import IconLogo from "./icons/IconLogo";
 import IconGear from "./icons/IconGear";
 import IconSignOut from "./icons/IconSignOut";
 import IconRepoForked from "./icons/IconRepoForked";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
         <div className="header">
-            <a href="/">
+            <Link to="/">
                 <IconLogo/>
-            </a>
+            </Link>
             <div className="icon-actions">
                 <div className="settings">
-                    <a href="/profile">
+                    <Link to="/profile">
                         <IconGear/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="logout">
-                    <a href="{{logoutUrl}}">
+                    <Link to="/logout">
                         <IconSignOut/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="fork">
                     <a href="https://github.com/ory/kratos-selfservice-ui-node" target="_blank" rel="noopener noreferrer">

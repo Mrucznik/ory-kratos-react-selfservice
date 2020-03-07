@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/styles/Auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/Form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/Typography.css" afterDir="false" />
+    <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/Logout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/auth.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/typography.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormErrors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormErrors.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Registration.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +20,8 @@
       <list>
         <option value="TypeScript File" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -101,7 +91,7 @@
       <workItem from="1582065505022" duration="1171000" />
       <workItem from="1582141546119" duration="2987000" />
       <workItem from="1583586805909" duration="2803000" />
-      <workItem from="1583590480399" duration="3798000" />
+      <workItem from="1583590480399" duration="4903000" />
     </task>
     <task id="LOCAL-00001" summary="Clean up react project">
       <created>1581775057780</created>
@@ -166,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583591573415</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=".">
+      <created>1583594374899</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583594374899</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581776960442" />
-    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583594271833">
+    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583594373829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594271833" />
+    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594373829" />
     <state x="2404" y="112" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1582157488057" />
     <state x="187" y="92" key="DiffContextDialog" timestamp="1583588430482">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -243,6 +240,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594296302" />
+    <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1583595901049">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583595901049" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583590657383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -11,14 +11,23 @@ import './styles/Typography.css'
 import Login from "./pages/Login";
 import Registration from "./pages/Registration";
 import Dashboard from "./pages/Dashboard";
+import Error from "./pages/Error";
+import Profile from "./pages/Profile";
+import Verify from "./pages/Verify";
+import Logout from "./pages/Logout";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-            <Route path="/login" component={Login}/>
-            <Route path="/register" component={Registration}/>
+            <Route path="/auth/login" component={Login}/>
+            <Route path="/auth/registration" component={Registration}/>
+            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/error" component={Error}/>
+            <Route path="/profile" component={Profile}/>
+            <Route path="/verify" component={Verify}/>
+            <Route path="/logout" component={Logout}/>
             <Route path="/" exact component={Dashboard}/>
         </Switch>
       </Router>

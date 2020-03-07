@@ -1,8 +1,8 @@
 import React from 'react';
 import IconLogo from "../components/icons/IconLogo";
+import {Link} from "react-router-dom";
 
 type ErrorPropsType = {
-    logoutUrl: string,
     message: string
 }
 
@@ -11,7 +11,7 @@ const Error = (props: ErrorPropsType) => {
         <div className="content">
             <div className="header">
                 <IconLogo/>
-                <div className="logout"><a href={props.logoutUrl}>LOG OUT</a></div>
+                <div className="logout"><Link to="/logout">LOG OUT</Link></div>
             </div>
             <div className="container">
                 <h1>An error occurred</h1>

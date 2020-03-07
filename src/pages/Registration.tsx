@@ -2,6 +2,7 @@ import React from 'react';
 import IconLogo from "../components/icons/IconLogo";
 import FormFields from "../components/FormFields";
 import FormErrors from "../components/FormErrors";
+import {Link} from "react-router-dom";
 
 const Registration = () => {
     return (
@@ -21,7 +22,7 @@ const Registration = () => {
                 <hr className="divider"/>
 
                     <div className="alternative-actions">
-                        <a href="{{baseUrl}}auth/login">Already have an account? Log in instead</a>
+                        <Link to="/auth/login">Already have an account? Log in instead</Link>
                     </div>
             </div>
         </div>
