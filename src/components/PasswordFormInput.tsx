@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 
 const PasswordFormInput = () => {
-    const [type, setType] = useState('password');
+    const [passwordType, setPasswordType] = useState('password');
 
     const togglePasswordVisible = () => {
-        setType( type ==='password' ? 'text' : 'password');
+        setPasswordType( passwordType ==='password' ? 'text' : 'password');
     };
 
     return (
