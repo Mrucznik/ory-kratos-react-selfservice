@@ -4,24 +4,28 @@ import FormFields from "../components/FormFields";
 import FormErrors from "../components/FormErrors";
 import {Link} from "react-router-dom";
 
-const Login = () => {
+type LoginProps = {
+    formAction: string
+}
+
+const Login = (props: LoginProps) => {
     return (
         <div className="auth">
             <div className="container">
                 <IconLogo/>
                 <h5 className="subheading">Welcome to this example login screen!</h5>
 
-                <FormErrors className="overview-form-errors"/>
+                <FormErrors className="overview-form-errors" errors={[{"message": "test"}]}/>
 
-                <form action="{{formAction}}" method="POST">
-                    <FormFields/>
+                <form action={props.formAction} method="POST">
+                    <FormFields formFields={[]}/>
                     <button type="submit">Sign In</button>
                 </form>
 
                 <hr className="divider"/>
 
                     <div className="alternative-actions">
-                        {/*<a href="{{baseUrl}}auth/registration">Recover password</a>*/}
+                        {/*<Link to="/auth/registration">Recover password</Link>*/}
                         <Link to="/auth/registration">Register new account</Link>
                     </div>
             </div>

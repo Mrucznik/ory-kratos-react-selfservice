@@ -1,14 +1,16 @@
 import React from 'react';
 import FormErrors from "./FormErrors";
+import {getTitle} from "../util/translations";
+import {FormField} from "@oryd/kratos-client";
 
-const GenericFormInput = () => {
+const GenericFormInput = (props: {field: FormField}) => {
     return (
         <fieldset>
             <label>
-                <input name="{{name}}" type="{{type}}" value="{{value}}" placeholder="{{getTitle name}}"/>
-                    {/*<span>{{getTitle name}}</span>*/}
+                <input name={props.field.name} type={props.field.type} value={props.field.value?.toString()} placeholder={getTitle(props.field.name)}/>
+                <span>{getTitle(props.field.name)}</span>
             </label>
-            <FormErrors className="input-form-errors"/>
+            <FormErrors className="input-form-errors" errors={[{"message": "test"}]}/>
         </fieldset>
     );
 };

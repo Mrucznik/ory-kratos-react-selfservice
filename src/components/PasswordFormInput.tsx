@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
+import {getTitle} from "../util/translations";
+import FormErrors from "./FormErrors";
+import {FormField} from "@oryd/kratos-client";
 
-const PasswordFormInput = () => {
+
+const PasswordFormInput = (props: {field: FormField}) => {
     const [passwordType, setPasswordType] = useState('password');
 
     const togglePasswordVisible = () => {
@@ -10,8 +14,8 @@ const PasswordFormInput = () => {
     return (
         <fieldset>
             <label>
-                <input name="{{name}}" type="{{type}}" value="{{value}}" placeholder="{{getTitle name}}" />
-                    <span>{/*{{getTitle name}}*/}</span>
+                <input name={props.field.name} type={props.field.type} value={props.field.value?.toString()} placeholder={getTitle(props.field.name)} />
+                    <span>{getTitle(props.field.name)}</span>
 
                     <svg className="password-visibility-toggle" onClick={togglePasswordVisible}>
                         <path
@@ -25,7 +29,7 @@ const PasswordFormInput = () => {
                         />
                     </svg>
             </label>
-            {/*{{> formErrors className="input-form-errors"}}*/}
+            <FormErrors className="input-form-errors" errors={[{"message": "test"}]}/>
         </fieldset>
     );
 };

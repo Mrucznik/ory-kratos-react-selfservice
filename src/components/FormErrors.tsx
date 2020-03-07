@@ -1,15 +1,22 @@
 import React from 'react';
 
-type FormErrorsPropsType = {
-    className: string
+type FormErrorsProps = {
+    className: string,
+    errors: ErrorType[]
 }
 
-const FormErrors = (params: FormErrorsPropsType) => {
+type ErrorType = {
+    message: string
+}
+
+const FormErrors = (props: FormErrorsProps) => {
     return (
-        <div className={`form-errors ${params.className}`}>
-            {/*{{~#each errors~}}*/}
-            {/*<div className="message">{{message}}</div>*/}
-            {/*{{~/each~}}*/}
+        <div className={`form-errors ${props.className}`}>
+            {
+                props.errors.map((item) =>
+                    <div className="message">{item.message}</div>
+                )
+            }
         </div>
     );
 };

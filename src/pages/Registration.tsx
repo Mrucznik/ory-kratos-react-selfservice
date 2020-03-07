@@ -4,7 +4,11 @@ import FormFields from "../components/FormFields";
 import FormErrors from "../components/FormErrors";
 import {Link} from "react-router-dom";
 
-const Registration = () => {
+type RegistrationProps = {
+    formAction: string
+}
+
+const Registration = (props: RegistrationProps) => {
     return (
         <div className="auth">
             <div className="container">
@@ -12,10 +16,10 @@ const Registration = () => {
                 <h5 className="subheading">Welcome to SecureApp! <br/>
                     Use the form below to sign up:</h5>
 
-                <FormErrors className="overview-form-errors"/>
+                <FormErrors className="overview-form-errors" errors={[{"message": "test"}]}/>
 
-                <form action="{{ formAction }}" method="POST">
-                    <FormFields/>
+                <form action={props.formAction} method="POST">
+                    <FormFields formFields={[]}/>
                     <button type="submit">Sign Up</button>
                 </form>
 

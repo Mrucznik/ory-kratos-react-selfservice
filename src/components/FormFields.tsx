@@ -1,11 +1,17 @@
 import React from 'react';
+import {toFormInputPartialName} from "../util/translations";
+import {FormField} from "@oryd/kratos-client";
 
-const FormFields = () => {
+type FormFieldsProps = {
+    formFields: FormField[]
+}
+
+const FormFields = (props: FormFieldsProps) => {
     return (
         <div>
-            {/*{{#each formFields}}*/}
-            {/*    {{> (toFormInputPartialName type)}}*/}
-            {/*{{/each}}*/}
+            {
+                props.formFields.map((item) => toFormInputPartialName(item))
+            }
         </div>
     );
 };
