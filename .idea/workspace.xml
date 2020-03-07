@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Logout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Registration.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +86,7 @@
       <workItem from="1582065505022" duration="1171000" />
       <workItem from="1582141546119" duration="2987000" />
       <workItem from="1583586805909" duration="2803000" />
-      <workItem from="1583590480399" duration="4903000" />
+      <workItem from="1583590480399" duration="5154000" />
     </task>
     <task id="LOCAL-00001" summary="Clean up react project">
       <created>1581775057780</created>
@@ -163,7 +158,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583594374899</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".">
+      <created>1583595951382</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1583595951382</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor">
+      <created>1583596122040</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1583596122040</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +201,8 @@
     <MESSAGE value="Icons" />
     <MESSAGE value="Copy templates from kratos-selfservice-ui-node" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="679" y="74" key="#Dockerfile" timestamp="1581777221309">
@@ -203,10 +213,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581776960442" />
-    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583594373829">
+    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583596121281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594373829" />
+    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583596121281" />
     <state x="2404" y="112" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1582157488057" />
     <state x="187" y="92" key="DiffContextDialog" timestamp="1583588430482">
       <screen x="0" y="0" width="1920" height="1040" />
