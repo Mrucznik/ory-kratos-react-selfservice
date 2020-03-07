@@ -2,8 +2,10 @@ import React from 'react';
 
 const FormErrors = () => {
     return (
-        <div>
-
+        <div className="form-errors {{className}}">
+            {{~#each errors~}}
+            <div className="message">{{message}}</div>
+            {{~/each~}}
         </div>
     );
 };

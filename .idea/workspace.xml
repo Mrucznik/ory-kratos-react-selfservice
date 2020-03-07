@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment="Change route / to greedy">
-      <change afterPath="$PROJECT_DIR$/public/styles/auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/styles/form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/styles/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/styles/typography.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FormErrors.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FormFields.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GenericFormInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HiddenFormInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PasswordInputToggle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconCheck.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconClose.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconHear.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconLogo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconRepoForked.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/IconSignOut.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Registration.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Verify.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ory-kratos-react.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ory-kratos-react-selfservice.iml" afterDir="false" />
+    <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment="Styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Hello.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormErrors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormErrors.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormFields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormFields.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GenericFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenericFormInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HiddenFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HiddenFormInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PasswordInputToggle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Register.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Verify.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Verify.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +94,7 @@
       <workItem from="1582059677919" duration="4919000" />
       <workItem from="1582065505022" duration="1171000" />
       <workItem from="1582141546119" duration="2987000" />
-      <workItem from="1583586805909" duration="1469000" />
+      <workItem from="1583586805909" duration="2694000" />
     </task>
     <task id="LOCAL-00001" summary="Clean up react project">
       <created>1581775057780</created>
@@ -140,7 +124,28 @@
       <option name="project" value="LOCAL" />
       <updated>1581781326800</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="App structure">
+      <created>1583588444375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583588444375</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Styles">
+      <created>1583588478810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583588478810</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Icons">
+      <created>1583588877004</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583588877004</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +169,10 @@
     <MESSAGE value="Init structure" />
     <MESSAGE value="Add docker &amp; docker-compose config" />
     <MESSAGE value="Change route / to greedy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change route / to greedy" />
+    <MESSAGE value="App structure" />
+    <MESSAGE value="Styles" />
+    <MESSAGE value="Icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Icons" />
   </component>
   <component name="WindowStateProjectService">
     <state x="679" y="74" key="#Dockerfile" timestamp="1581777221309">
@@ -175,10 +183,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581776960442" />
-    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583588443030">
+    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583588876159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583588443030" />
+    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583588876159" />
     <state x="2404" y="112" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1582157488057" />
     <state x="187" y="92" key="DiffContextDialog" timestamp="1583588430482">
       <screen x="0" y="0" width="1920" height="1040" />

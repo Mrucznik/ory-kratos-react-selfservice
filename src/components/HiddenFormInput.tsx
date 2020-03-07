@@ -2,9 +2,7 @@ import React from 'react';
 
 const HiddenFormInput = () => {
     return (
-        <div>
-
-        </div>
+        <input name="{{name}}" type="hidden" value="{{value}}" />
     );
 };
 
