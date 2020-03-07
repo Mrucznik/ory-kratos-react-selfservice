@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Hello from "./pages/Hello";
+import Registration from "./pages/Registration";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
       <Router>
         <Switch>
             <Route path="/login" component={Login}/>
-            <Route path="/register" component={Register}/>
-            <Route path="/" component={Hello}/>
+            <Route path="/register" component={Registration}/>
+            <Route path="/" component={Dashboard}/>
         </Switch>
       </Router>
     </div>

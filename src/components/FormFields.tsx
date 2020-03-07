@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Login = () => {
+const FormFields = () => {
     return (
         <div>
+
         </div>
     );
 };
 
-export default Login;
+export default FormFields;

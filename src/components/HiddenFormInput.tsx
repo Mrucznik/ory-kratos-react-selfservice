@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Login = () => {
+const HiddenFormInput = () => {
     return (
         <div>
+
         </div>
     );
 };
 
-export default Login;
+export default HiddenFormInput;

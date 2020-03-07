@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Hello = () => {
+const IconSignOut = () => {
     return (
         <div>
-            Hello!
+            
         </div>
     );
 };
 
-export default Hello;
+export default IconSignOut;
