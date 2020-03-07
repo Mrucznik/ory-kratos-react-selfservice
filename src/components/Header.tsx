@@ -22,7 +22,7 @@ const Header = () => {
                     </a>
                 </div>
                 <div className="fork">
-                    <a href="https://github.com/ory/kratos-selfservice-ui-node" target="_blank">
+                    <a href="https://github.com/ory/kratos-selfservice-ui-node" target="_blank" rel="noopener noreferrer">
                         <IconRepoForked/>
                         <div>Fork on<br/>GitHub</div>
                     </a>

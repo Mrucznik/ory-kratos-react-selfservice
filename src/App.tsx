@@ -5,6 +5,9 @@ import {
     Route
 } from "react-router-dom";
 import './App.css';
+import './styles/Auth.css'
+import './styles/Form.css'
+import './styles/Typography.css'
 import Login from "./pages/Login";
 import Registration from "./pages/Registration";
 import Dashboard from "./pages/Dashboard";
@@ -16,7 +19,7 @@ function App() {
         <Switch>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Registration}/>
-            <Route path="/" component={Dashboard}/>
+            <Route path="/" exact component={Dashboard}/>
         </Switch>
       </Router>
     </div>

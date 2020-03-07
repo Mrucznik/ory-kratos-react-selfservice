@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const PasswordFormInput = () => {
+    const [type, setType] = useState('password');
+
     const togglePasswordVisible = () => {
-        const input = document.querySelector('input[name="password"]');
-        const newType = input.getAttribute('type') === 'password' ? 'text' : 'password';
-        input.setAttribute('type', newType);
+        setType( type ==='password' ? 'text' : 'password');
     };
 
     return (

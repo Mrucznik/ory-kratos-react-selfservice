@@ -17,10 +17,10 @@ const Login = () => {
                     <button type="submit">Sign In</button>
                 </form>
 
-                <hr className="divider">
+                <hr className="divider"/>
 
                     <div className="alternative-actions">
-                        <!-- <a href="{{baseUrl}}auth/registration">Recover password</a> -->
+                        {/*<a href="{{baseUrl}}auth/registration">Recover password</a>*/}
                         <a href="{{baseUrl}}auth/registration">Register new account</a>
                     </div>
             </div>

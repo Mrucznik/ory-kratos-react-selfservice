@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment="">
+    <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/styles/Auth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/Form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/Typography.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/auth.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/typography.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormErrors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormErrors.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormFields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormFields.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GenericFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenericFormInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Registration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Verify.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Verify.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +31,7 @@
         <option value="TypeScript File" />
         <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,6 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/styles" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,11 +63,12 @@
     <property name="ts.external.directory.path" value="K:\2_MrucznikRolePlay\GTA_V\repos\web\ory-kratos-react-selfservice\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\2_MrucznikRolePlay\GTA_V\repos\web\ory-kratos-react-selfservice\src\styles" />
+      <recent name="K:\1_Informatyka\Programowanie\Projekty\Moje\React\ory-kratos-react\src\pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="K:\2_MrucznikRolePlay\GTA_V\repos\web\ory-kratos-react-selfservice\public\styles" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="K:\1_Informatyka\Programowanie\Projekty\Moje\React\ory-kratos-react\src\pages" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -92,7 +101,7 @@
       <workItem from="1582065505022" duration="1171000" />
       <workItem from="1582141546119" duration="2987000" />
       <workItem from="1583586805909" duration="2803000" />
-      <workItem from="1583590480399" duration="1073000" />
+      <workItem from="1583590480399" duration="3798000" />
     </task>
     <task id="LOCAL-00001" summary="Clean up react project">
       <created>1581775057780</created>
@@ -150,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583589726009</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=".">
+      <created>1583591573415</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583591573415</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +194,8 @@
     <MESSAGE value="Styles" />
     <MESSAGE value="Icons" />
     <MESSAGE value="Copy templates from kratos-selfservice-ui-node" />
-    <option name="LAST_COMMIT_MESSAGE" value="Copy templates from kratos-selfservice-ui-node" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
     <state x="679" y="74" key="#Dockerfile" timestamp="1581777221309">
@@ -189,10 +206,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581776960442" />
-    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583589725001">
+    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583594271833">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589725001" />
+    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594271833" />
     <state x="2404" y="112" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1582157488057" />
     <state x="187" y="92" key="DiffContextDialog" timestamp="1583588430482">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -202,26 +219,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583587721084" />
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1583589739485">
+    <state width="1891" height="287" key="GridCell.Tab.0.bottom" timestamp="1583594271860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589739485" />
-    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1583589739485">
+    <state width="1891" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594271860" />
+    <state width="1891" height="287" key="GridCell.Tab.0.center" timestamp="1583594271860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589739485" />
-    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1583589739485">
+    <state width="1891" height="287" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594271860" />
+    <state width="1891" height="287" key="GridCell.Tab.0.left" timestamp="1583594271860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589739485" />
-    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1583589739485">
+    <state width="1891" height="287" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594271860" />
+    <state width="1891" height="287" key="GridCell.Tab.0.right" timestamp="1583594271860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589739485" />
+    <state width="1891" height="287" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594271860" />
     <state x="628" y="186" key="SettingsEditor" timestamp="1583587979316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="628" y="186" key="SettingsEditor/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583587979316" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583594296302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583594296302" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583590657383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
