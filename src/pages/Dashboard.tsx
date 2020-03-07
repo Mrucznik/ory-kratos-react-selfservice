@@ -1,14 +1,12 @@
 import React from 'react';
+import Header from "../components/Header";
 
 const Dashboard = () => {
     return (
         <div className="content">
-            {{ > header}}
+            <Header/>
             <div className="container">
-                <h4 className="greeting">Welcome back, <span className="user-identifier">{{
-                    session
-                    .identity.traits.email
-                }}</span>!</h4>
+                <h4 className="greeting">Welcome back, <span className="user-identifier">{{session.identity.traits.email}}</span>!</h4>
                 <h5>This example app is secure by default</h5>
                 <p>
                     Hello, nice to have you! You signed up with this data:

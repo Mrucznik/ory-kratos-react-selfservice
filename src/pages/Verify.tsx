@@ -1,13 +1,15 @@
 import React from 'react';
+import Header from "../components/Header";
+import FormErrors from "../components/FormErrors";
 
 const Verify = () => {
     return (
         <div className="content">
-            {{ > header}}
+            <Header/>
             <div className="container">
                 <h4>Resend verification code</h4>
 
-                {{ > formErrors className="overview-form-errors"}}
+                <FormErrors className="overview-form-errors"/>
 
                 <form action="{{action}}" method="{{method}}">
                     {/*{{#each fields}}*/}

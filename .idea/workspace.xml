@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment="Styles">
+    <list default="true" id="1a50a14f-5d52-4b3c-bdf3-d0af6131caa7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormErrors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormErrors.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormFields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormFields.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GenericFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenericFormInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HiddenFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HiddenFormInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PasswordFormInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PasswordInputToggle.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
@@ -55,7 +52,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Users\Mrucznik\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.6015.40\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="K:\2_MrucznikRolePlay\GTA_V\repos\web\ory-kratos-react-selfservice\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -94,7 +91,8 @@
       <workItem from="1582059677919" duration="4919000" />
       <workItem from="1582065505022" duration="1171000" />
       <workItem from="1582141546119" duration="2987000" />
-      <workItem from="1583586805909" duration="2694000" />
+      <workItem from="1583586805909" duration="2803000" />
+      <workItem from="1583590480399" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary="Clean up react project">
       <created>1581775057780</created>
@@ -145,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583588877004</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Copy templates from kratos-selfservice-ui-node">
+      <created>1583589726009</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583589726009</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +177,8 @@
     <MESSAGE value="App structure" />
     <MESSAGE value="Styles" />
     <MESSAGE value="Icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Icons" />
+    <MESSAGE value="Copy templates from kratos-selfservice-ui-node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Copy templates from kratos-selfservice-ui-node" />
   </component>
   <component name="WindowStateProjectService">
     <state x="679" y="74" key="#Dockerfile" timestamp="1581777221309">
@@ -183,10 +189,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581776960442" />
-    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583588876159">
+    <state x="553" y="115" key="CommitChangelistDialog2" timestamp="1583589725001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583588876159" />
+    <state x="553" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589725001" />
     <state x="2404" y="112" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1582157488057" />
     <state x="187" y="92" key="DiffContextDialog" timestamp="1583588430482">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -196,25 +202,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583587721084" />
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1581805069099">
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1583589739485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581805069099" />
-    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1581805069099">
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589739485" />
+    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1583589739485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581805069099" />
-    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1581805069098">
+    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589739485" />
+    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1583589739485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581805069098" />
-    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1581805069099">
+    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589739485" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1583589739485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1581805069099" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583589739485" />
     <state x="628" y="186" key="SettingsEditor" timestamp="1583587979316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="628" y="186" key="SettingsEditor/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583587979316" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583590657383">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1583590657383" />
   </component>
 </project>

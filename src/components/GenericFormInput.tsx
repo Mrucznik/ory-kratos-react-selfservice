@@ -1,13 +1,14 @@
 import React from 'react';
+import FormErrors from "./FormErrors";
 
 const GenericFormInput = () => {
     return (
         <fieldset>
             <label>
-                <input name="{{name}}" type="{{type}}" value="{{value}}" placeholder="{{getTitle name}}">
-                    <span>{{getTitle name}}</span>
+                <input name="{{name}}" type="{{type}}" value="{{value}}" placeholder="{{getTitle name}}"/>
+                    {/*<span>{{getTitle name}}</span>*/}
             </label>
-            {{> formErrors className="input-form-errors"}}
+            <FormErrors className="input-form-errors"/>
         </fieldset>
     );
 };

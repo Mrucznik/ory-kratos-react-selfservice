@@ -1,16 +1,19 @@
 import React from 'react';
+import IconLogo from "../components/icons/IconLogo";
+import FormFields from "../components/FormFields";
+import FormErrors from "../components/FormErrors";
 
 const Login = () => {
     return (
         <div className="auth">
             <div className="container">
-                {{ > icon_logo}}
+                <IconLogo/>
                 <h5 className="subheading">Welcome to this example login screen!</h5>
 
-                {{ > formErrors className="overview-form-errors"}}
+                <FormErrors className="overview-form-errors"/>
 
                 <form action="{{formAction}}" method="POST">
-                    {{ > formFields}}
+                    <FormFields/>
                     <button type="submit">Sign In</button>
                 </form>
 
