@@ -1,4 +1,4 @@
-react-app:
+selfservice:
   strategies:
     password:
       enabled: true

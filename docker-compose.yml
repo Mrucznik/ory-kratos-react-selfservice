@@ -10,9 +10,11 @@ services:
     - '.:/app'
     - '/app/node_modules'
     ports:
-    - '3001:3000'
+    - '3000:3000'
     environment:
       - NODE_ENV=development
+    networks:
+      - intranet
 
   kratos-migrate:
     image: oryd/kratos:latest-sqlite
