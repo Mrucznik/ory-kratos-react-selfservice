@@ -4,7 +4,7 @@ selfservice:
       enabled: true
 
   logout:
-    redirect_to: http://127.0.0.1:3000/auth/login
+    redirect_to: http://127.0.0.1:4455/auth/login
 
   login:
     request_lifespan: 10m
@@ -15,7 +15,7 @@ selfservice:
         -
           job: redirect
           config:
-            default_redirect_url: http://127.0.0.1:3000/
+            default_redirect_url: http://127.0.0.1:4455/
             allow_user_defined_redirect: true
 
   registration:
@@ -27,7 +27,7 @@ selfservice:
         -
           job: redirect
           config:
-            default_redirect_url: http://127.0.0.1:3000/
+            default_redirect_url: http://127.0.0.1:4455/
             allow_user_defined_redirect: true
 
 log:
@@ -38,21 +38,21 @@ secrets:
     - PLEASE-CHANGE-ME-I-AM-VERY-INSECURE
 
 urls:
-  login_ui: http://127.0.0.1:3000/auth/login
-  registration_ui: http://127.0.0.1:3000/auth/registration
-  error_ui: http://127.0.0.1:3000/error
-  profile_ui: http://127.0.0.1:3000/profile
+  login_ui: http://127.0.0.1:4455/auth/login
+  registration_ui: http://127.0.0.1:4455/auth/registration
+  error_ui: http://127.0.0.1:4455/error
+  profile_ui: http://127.0.0.1:4455/profile
 
   # These are undefined because not available in this demo
-  mfa_ui: http://127.0.0.1:3000/
-  verify_ui: http://127.0.0.1:3000/
+  mfa_ui: http://127.0.0.1:4455/
+  verify_ui: http://127.0.0.1:4455/
 
   self:
     public: http://127.0.0.1:4455/.ory/kratos/public/
     admin: http://kratos:4434/
-  default_return_to: http://127.0.0.1:3000/
+  default_return_to: http://127.0.0.1:4455/
   whitelisted_return_to_domains:
-    - http://127.0.0.1:3000
+    - http://127.0.0.1:4455
 
 hashers:
   argon2:

@@ -17,7 +17,7 @@ const Profile = (props: ProfileProps) => {
             <div className="container">
                 <h4>User settings</h4>
 
-                <FormErrors className="overview-form-errors" errors={[{"message": "test"}]}/>
+                <FormErrors className="overview-form-errors" errors={[]}/>
 
                 <form action={props.action} method={props.method}>
                     {

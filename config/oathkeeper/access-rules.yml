@@ -26,7 +26,7 @@
     preserve_host: true
     url: "http://react-app:3000"
   match:
-    url: "http://127.0.0.1:4455/<(error|verify|auth/login|auth/registration|static/.*|(.+\\.css))(|/)>"
+    url: "http://127.0.0.1:4455/<(error|verify|auth/login|auth/registration|static/.*|sockjs-node|favicon.ico|logo192.png|(.+(\\.css|\\.js)))(|/)>"
     methods:
       - GET
   authenticators:

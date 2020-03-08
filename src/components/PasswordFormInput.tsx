@@ -5,16 +5,17 @@ import {FormField} from "@oryd/kratos-client";
 
 
 const PasswordFormInput = (props: {field: FormField}) => {
-    const [passwordType, setPasswordType] = useState('password');
+    const [passwordType, setPasswordType] = useState(props.field.type);
 
     const togglePasswordVisible = () => {
+        console.log(passwordType);
         setPasswordType( passwordType ==='password' ? 'text' : 'password');
     };
 
     return (
         <fieldset>
             <label>
-                <input name={props.field.name} type={props.field.type} value={props.field.value?.toString()} placeholder={getTitle(props.field.name)} />
+                <input name={props.field.name} type={passwordType} value={props.field.value?.toString()} placeholder={getTitle(props.field.name)} />
                     <span>{getTitle(props.field.name)}</span>
 
                     <svg className="password-visibility-toggle" onClick={togglePasswordVisible}>
@@ -29,7 +30,7 @@ const PasswordFormInput = (props: {field: FormField}) => {
                         />
                     </svg>
             </label>
-            <FormErrors className="input-form-errors" errors={[{"message": "test"}]}/>
+            <FormErrors className="input-form-errors" errors={[]}/>
         </fieldset>
     );
 };

@@ -10,7 +10,7 @@ const GenericFormInput = (props: {field: FormField}) => {
                 <input name={props.field.name} type={props.field.type} value={props.field.value?.toString()} placeholder={getTitle(props.field.name)}/>
                 <span>{getTitle(props.field.name)}</span>
             </label>
-            <FormErrors className="input-form-errors" errors={[{"message": "test"}]}/>
+            <FormErrors className="input-form-errors" errors={[]}/>
         </fieldset>
     );
 };

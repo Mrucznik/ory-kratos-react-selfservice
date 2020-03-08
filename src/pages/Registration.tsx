@@ -16,7 +16,7 @@ const Registration = (props: RegistrationProps) => {
                 <h5 className="subheading">Welcome to SecureApp! <br/>
                     Use the form below to sign up:</h5>
 
-                <FormErrors className="overview-form-errors" errors={[{"message": "test"}]}/>
+                <FormErrors className="overview-form-errors" errors={[]}/>
 
                 <form action={props.formAction} method="POST">
                     <FormFields formFields={[]}/>
