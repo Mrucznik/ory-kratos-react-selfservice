@@ -3,6 +3,7 @@ import IconLogo from "../components/icons/IconLogo";
 import FormFields from "../components/FormFields";
 import FormErrors from "../components/FormErrors";
 import {Link, Redirect, useLocation} from "react-router-dom";
+import config from "../config";
 
 type LoginProps = {
     formAction: string
@@ -14,11 +15,13 @@ function useQuery() {
 
 const Login = (props: LoginProps) => {
     const query = useQuery();
-    const [formFields, setFormFields] = useState({ methods: {password: {config: {fields: []}}}});
+    const [formFields, setFormFields] = useState({ methods: {password: {config: {action: '', fields: []}}}});
     const request = query.get('request');
 
+    //todo: redirect to /.ory/kratos/public/self-service/browser/flows/login on empty request
+
     useEffect(() => {
-        fetch(`http://127.0.0.1:4455/.ory/kratos/public/self-service/browser/flows/requests/login?request=${request}`)
+        fetch(`${config.kratos.public}/self-service/browser/flows/requests/login?request=${request}`)
             .then(res => res.json())
             .then((data) => setFormFields(data))
             .catch(console.log);
@@ -32,7 +35,7 @@ const Login = (props: LoginProps) => {
 
                 <FormErrors className="overview-form-errors" errors={[]}/>
 
-                <form action={props.formAction} method="POST">
+                <form action={formFields.methods.password.config.action} method="POST">
                     <FormFields formFields={formFields.methods.password.config.fields}/>
                     <button type="submit">Sign In</button>
                 </form>
