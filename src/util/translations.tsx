@@ -40,11 +40,11 @@ const sortFormFields = (first: FormField, second: FormField) =>
 const toFormInputPartialName = (field: FormField) => {
     switch (field.name) {
         case 'hidden':
-            return <HiddenFormInput field={field}/>;
+            return <HiddenFormInput key={field.name} field={field}/>;
         case 'password':
-            return <PasswordFormInput field={field}/>;
+            return <PasswordFormInput key={field.name} field={field}/>;
         default:
-            return <GenericFormInput field={field}/>;
+            return <GenericFormInput key={field.name} field={field}/>;
     }
 };
 

@@ -2,17 +2,23 @@ import React, {useEffect, useState} from 'react';
 import IconLogo from "../components/icons/IconLogo";
 import FormFields from "../components/FormFields";
 import FormErrors from "../components/FormErrors";
-import {Link} from "react-router-dom";
+import {Link, Redirect, useLocation} from "react-router-dom";
 
 type LoginProps = {
     formAction: string
 }
 
+function useQuery() {
+    return new URLSearchParams(useLocation().search);
+}
+
 const Login = (props: LoginProps) => {
+    const query = useQuery();
     const [formFields, setFormFields] = useState({ methods: {password: {config: {fields: []}}}});
+    const request = query.get('request');
 
     useEffect(() => {
-        fetch('http://127.0.0.1:4455/.ory/kratos/public/self-service/browser/flows/requests/login?request=74a269f1-fc86-44b9-a102-fd2b2ee17f57')
+        fetch(`http://127.0.0.1:4455/.ory/kratos/public/self-service/browser/flows/requests/login?request=${request}`)
             .then(res => res.json())
             .then((data) => setFormFields(data))
             .catch(console.log);

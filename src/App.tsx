@@ -15,6 +15,8 @@ import Error from "./pages/Error";
 import Profile from "./pages/Profile";
 import Verify from "./pages/Verify";
 import Logout from "./pages/Logout";
+import PrivateRoute from "./components/PrivateRoute";
+import Debug from "./pages/Debug";
 
 function App() {
   return (
@@ -23,11 +25,12 @@ function App() {
         <Switch>
             <Route path="/auth/login" component={Login}/>
             <Route path="/auth/registration" component={Registration}/>
-            <Route path="/dashboard" component={Dashboard} />
             <Route path="/error" component={Error}/>
-            <Route path="/profile" component={Profile}/>
             <Route path="/verify" component={Verify}/>
             <Route path="/logout" component={Logout}/>
+            <PrivateRoute path="/dashboard" component={Dashboard} />
+            <PrivateRoute path="/profile" component={Profile}/>
+            <PrivateRoute path="/debug" component={Debug}/>
             <Route path="/" exact component={Dashboard}/>
         </Switch>
       </Router>
