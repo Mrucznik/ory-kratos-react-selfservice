@@ -14,9 +14,9 @@ const Header = () => {
             </Link>
             <div className="icon-actions">
                 <div className="settings">
-                    <Link to="/profile">
+                    <a href={`${config.kratos.public}/self-service/browser/flows/profile`}>
                         <IconGear/>
-                    </Link>
+                    </a>
                 </div>
                 <div className="logout">
                     <a href={`${config.kratos.public}/self-service/browser/flows/logout`}>

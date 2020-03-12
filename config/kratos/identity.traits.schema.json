@@ -16,6 +16,16 @@
           }
         }
       }
+    },
+    "catname": {
+      "type": "string",
+      "format": "text",
+      "title": "Imię kota"
+    },
+    "catsurname": {
+      "type": "string",
+      "format": "text",
+      "title": "Nazwisko kota"
     }
   },
   "required": [

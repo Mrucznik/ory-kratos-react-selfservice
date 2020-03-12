@@ -10,7 +10,7 @@ const FormFields = (props: FormFieldsProps) => {
     return (
         <div>
             {
-                props.formFields.map((item) => <KratosForm field={item}/>)
+                props.formFields.map((item) => <KratosForm key={item.name} field={item}/>)
             }
         </div>
     );

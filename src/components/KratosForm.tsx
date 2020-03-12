@@ -11,11 +11,11 @@ type KratosFormsParams = {
 const KratosForm = (props: KratosFormsParams) => {
     switch (props.field.name) {
         case 'hidden':
-            return <HiddenFormInput key={props.field.name} field={props.field}/>;
+            return <HiddenFormInput field={props.field}/>;
         case 'password':
-            return <PasswordFormInput key={props.field.name} field={props.field}/>;
+            return <PasswordFormInput field={props.field}/>;
         default:
-            return <GenericFormInput key={props.field.name} field={props.field}/>;
+            return <GenericFormInput field={props.field}/>;
     }
 };
 

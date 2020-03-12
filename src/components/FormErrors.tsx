@@ -9,8 +9,8 @@ const FormErrors = (props: FormErrorsProps) => {
     return (
         <div className={`form-errors ${props.className}`}>
             {
-                props.errors && props.errors.map((item) =>
-                    <div className="message">{item.message}</div>
+                props.errors && props.errors.map((item, key) =>
+                    <div key={key} className="message">{item.message}</div>
                 )
             }
         </div>

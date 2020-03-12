@@ -1,5 +1,4 @@
 import { FormField } from '@oryd/kratos-client'
-import React from "react";
 
 const translations = {
     password: {
