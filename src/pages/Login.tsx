@@ -13,9 +13,14 @@ const Login = () => {
 
     useEffect(() => {
         fetch(`${config.kratos.public}/self-service/browser/flows/requests/login?request=${request}`)
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) throw res;
+                return res.json();
+            })
             .then((data) => setResponse(data))
-            .catch(console.log);
+            .catch((reason => {
+                console.log(reason)
+            }));
     }, [request]);
 
     if (useQuery().get('request') == null) {

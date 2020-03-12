@@ -19,9 +19,9 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="logout">
-                    <Link to={`${config.kratos.browser}/self-service/browser/flows/logout`}>
+                    <a href={`${config.kratos.public}/self-service/browser/flows/logout`}>
                         <IconSignOut/>
-                    </Link>
+                    </a>
                 </div>
                 <div className="fork">
                     <a href="https://github.com/ory/kratos-selfservice-ui-node" target="_blank" rel="noopener noreferrer">
