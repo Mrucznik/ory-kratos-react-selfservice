@@ -4,6 +4,7 @@ import IconGear from "./icons/IconGear";
 import IconSignOut from "./icons/IconSignOut";
 import IconRepoForked from "./icons/IconRepoForked";
 import {Link} from "react-router-dom";
+import config from '../config'
 
 const Header = () => {
     return (
@@ -18,7 +19,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="logout">
-                    <Link to="/logout">
+                    <Link to={`${config.kratos.browser}/self-service/browser/flows/logout`}>
                         <IconSignOut/>
                     </Link>
                 </div>
