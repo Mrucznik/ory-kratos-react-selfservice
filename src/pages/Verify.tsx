@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../components/Header";
 import FormErrors from "../components/FormErrors";
 import { FormField } from '@oryd/kratos-client'
-import {toFormInputPartialName} from "../util/translations";
+import KratosForm from "../components/KratosForm";
 
 type VerifyProps = {
     action: string,
@@ -21,7 +21,7 @@ const Verify = (props: VerifyProps) => {
 
                 <form action={props.action} method={props.method}>
                     {
-                        props.fields.map((item) => toFormInputPartialName(item))
+                        props.fields.map((item) => <KratosForm field={item} />)
                     }
                     <button type="submit">Resend verification code</button>
                 </form>

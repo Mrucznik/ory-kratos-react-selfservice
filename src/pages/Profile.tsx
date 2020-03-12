@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from "../components/Header";
 import FormErrors from "../components/FormErrors";
-import {toFormInputPartialName} from "../util/translations";
 import {FormField} from "@oryd/kratos-client";
+import KratosForm from "../components/KratosForm";
 
 type ProfileProps = {
     action: string,
@@ -21,7 +21,7 @@ const Profile = (props: ProfileProps) => {
 
                 <form action={props.action} method={props.method}>
                     {
-                        props.fields.map((item) => toFormInputPartialName(item))
+                        props.fields.map((item) => <KratosForm field={item} />)
                     }
                     <button type="submit">Update user information</button>
                 </form>

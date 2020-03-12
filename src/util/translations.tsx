@@ -1,7 +1,4 @@
 import { FormField } from '@oryd/kratos-client'
-import HiddenFormInput from "../components/HiddenFormInput";
-import PasswordFormInput from "../components/PasswordFormInput";
-import GenericFormInput from "../components/GenericFormInput";
 import React from "react";
 
 const translations = {
@@ -36,16 +33,4 @@ const getPosition = (field: FormField) =>
 const sortFormFields = (first: FormField, second: FormField) =>
     getPosition(first) - getPosition(second);
 
-// this helper function translates the html input type to the corresponding partial name
-const toFormInputPartialName = (field: FormField) => {
-    switch (field.name) {
-        case 'hidden':
-            return <HiddenFormInput key={field.name} field={field}/>;
-        case 'password':
-            return <PasswordFormInput key={field.name} field={field}/>;
-        default:
-            return <GenericFormInput key={field.name} field={field}/>;
-    }
-};
-
-export { getTitle, sortFormFields, toFormInputPartialName }
+export { getTitle, sortFormFields }

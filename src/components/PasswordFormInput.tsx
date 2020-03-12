@@ -3,8 +3,11 @@ import {getTitle} from "../util/translations";
 import FormErrors from "./FormErrors";
 import {FormField} from "@oryd/kratos-client";
 
+type PasswordFormInputProps = {
+    field: FormField
+}
 
-const PasswordFormInput = (props: {field: FormField}) => {
+const PasswordFormInput = (props: PasswordFormInputProps) => {
     const [passwordType, setPasswordType] = useState(props.field.type);
 
     const togglePasswordVisible = () => {
@@ -30,7 +33,7 @@ const PasswordFormInput = (props: {field: FormField}) => {
                         />
                     </svg>
             </label>
-            <FormErrors className="input-form-errors" errors={[]}/>
+            <FormErrors className="input-form-errors" errors={props.field.errors}/>
         </fieldset>
     );
 };
