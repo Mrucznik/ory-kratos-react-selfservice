@@ -1,33 +1,52 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "../components/Header";
 import FormErrors from "../components/FormErrors";
-import {FormField} from "@oryd/kratos-client";
+import {ProfileManagementRequest} from "@oryd/kratos-client";
+import {useQuery} from "../util/UseQuery";
+import config from "../config";
+import RedirectUrl from "../components/RedirectURL";
 import KratosForm from "../components/KratosForm";
 
-type ProfileProps = {
-    action: string,
-    method: string,
-    fields: FormField[]
-}
+const Profile = () => {
+    const query = useQuery();
+    const [response, setResponse] = useState(new ProfileManagementRequest());
+    const request = query.get('request');
 
-const Profile = (props: ProfileProps) => {
-    return (
-        <div className="content">
-            <Header/>
-            <div className="container">
-                <h4>User settings</h4>
+    useEffect(() => {
+        fetch(`${config.kratos.public}/self-service/browser/flows/requests/profile?request=${request}`)
+            .then(res => {
+                if (!res.ok) throw res;
+                return res.json();
+            })
+            .then(data => setResponse(data))
+            .catch((reason => {
+                console.log(reason)
+            }));
+    }, []);
 
-                <FormErrors className="overview-form-errors" errors={[]}/>
-
-                <form action={props.action} method={props.method}>
-                    {
-                        props.fields.map((item) => <KratosForm field={item} />)
-                    }
-                    <button type="submit">Update user information</button>
-                </form>
+    if (useQuery().get('request') == null) {
+        return (<RedirectUrl to={`${config.kratos.public}/self-service/browser/flows/profile`}/>)
+    } else {
+        return (
+            <div className="content">
+                <Header/>
+                {
+                    response.form && (
+                        <div className="container">
+                            <h4>User settings</h4>
+                            <FormErrors className="overview-form-errors" errors={response.form.errors}/>
+                            <form action={response.form.action} method={response.form.method}>
+                                {
+                                    response.form.fields.map((item) => <KratosForm key={item.name} field={item}/>)
+                                }
+                                <button type="submit">Update user information</button>
+                            </form>
+                        </div>
+                    )
+                }
             </div>
-        </div>
-    );
+        );
+    }
 };
 
 export default Profile;

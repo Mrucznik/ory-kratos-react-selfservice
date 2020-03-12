@@ -7,7 +7,7 @@ const GenericFormInput = (props: {field: FormField}) => {
     return (
         <fieldset>
             <label>
-                <input name={props.field.name} type={props.field.type} value={props.field.value?.toString()} placeholder={getTitle(props.field.name)}/>
+                <input name={props.field.name} type={props.field.type} value={props.field.value?.toString()} placeholder={getTitle(props.field.name)} readOnly/>
                 <span>{getTitle(props.field.name)}</span>
             </label>
             <FormErrors className="input-form-errors" errors={[]}/>

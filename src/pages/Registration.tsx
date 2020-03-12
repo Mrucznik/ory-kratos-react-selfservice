@@ -5,6 +5,7 @@ import FormErrors from "../components/FormErrors";
 import {sortFormFields} from "../util/translations";
 import {useQuery} from "../util/UseQuery";
 import config from "../config";
+import RedirectUrl from "../components/RedirectURL";
 
 const Registration = () => {
     const query = useQuery();
@@ -19,8 +20,7 @@ const Registration = () => {
     }, [request]);
 
     if (useQuery().get('request') == null) {
-        window.location.href = `${config.kratos.public}/self-service/browser/flows/registration`;
-        return (<section>No request param in query - redirecting...</section>)
+        return (<RedirectUrl to={`${config.kratos.public}/self-service/browser/flows/registration`}/>);
     } else {
         return (
             <div className="auth">
