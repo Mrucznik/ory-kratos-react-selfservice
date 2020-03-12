@@ -45,7 +45,7 @@ urls:
 
   # These are undefined because not available in this demo
   mfa_ui: http://127.0.0.1:4455/
-  verify_ui: http://127.0.0.1:4455/
+  verify_ui: http://127.0.0.1:4455/verify
 
   self:
     public: http://127.0.0.1:4455/.ory/kratos/public/
