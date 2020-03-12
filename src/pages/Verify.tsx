@@ -1,33 +1,54 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "../components/Header";
 import FormErrors from "../components/FormErrors";
-import { FormField } from '@oryd/kratos-client'
 import KratosForm from "../components/KratosForm";
+import {useQuery} from "../util/UseQuery";
+import config from "../config";
+import RedirectUrl from "../components/RedirectURL";
+import {VerificationRequest} from "@oryd/kratos-client/model/verificationRequest";
 
-type VerifyProps = {
-    action: string,
-    method: string,
-    fields: FormField[]
-}
+const Verify = () => {
+    const query = useQuery();
+    const [response, setResponse] = useState(new VerificationRequest());
+    const request = query.get('request');
 
-const Verify = (props: VerifyProps) => {
-    return (
-        <div className="content">
-            <Header/>
-            <div className="container">
-                <h4>Resend verification code</h4>
+    useEffect(() => {
+        if(request !== null) {
+            fetch(`${config.kratos.public}/self-service/browser/flows/requests/login?request=${request}`)
+                .then(res => {
+                    if (!res.ok) throw res;
+                    return res.json();
+                })
+                .then(data => setResponse(data))
+                .catch(console.log);
+        }
+    }, [request]);
 
-                <FormErrors className="overview-form-errors" errors={[]}/>
+    if(request === null) {
+        return <RedirectUrl to={`${config.kratos.browser}/self-service/browser/flows/verification/email`}/>
+    } else {
+        return (
+            <div className="content">
+                <Header/>
+                {
+                    response.form && (
+                        <div className="container">
+                            <h4>Resend verification code</h4>
 
-                <form action={props.action} method={props.method}>
-                    {
-                        props.fields.map((item) => <KratosForm field={item} />)
-                    }
-                    <button type="submit">Resend verification code</button>
-                </form>
+                            <FormErrors className="overview-form-errors" errors={[]}/>
+
+                            <form action={response.form.action} method={response.form.method}>
+                                {
+                                    response.form.fields.map((item) => <KratosForm field={item}/>)
+                                }
+                                <button type="submit">Resend verification code</button>
+                            </form>
+                        </div>
+                    )
+                }
             </div>
-        </div>
-    );
+        );
+    }
 };
 
 export default Verify;
